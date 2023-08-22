@@ -1,0 +1,17 @@
+spring :
+  profiles:
+    active : native
+  cloud :
+    config :
+      server :
+        native:
+          searchLocations : ${user.home}/source/SpringCloudConfigclient/src/main/resources
+
+
+        #native: file://${user.dir}/source/SpringCloudConfigclient/src/main/resources
+        #git :
+          #uri : https://github.com/hariprasanth89/git-timesheet-config-repo
+          #uri : file:////Users/thirukarthi/source/SpringCloudConfigclient/src/main/resources
+#          profiles.active=native
+#          spring.cloud.config.server.native:searchLocations=file://${user.dir}/cloud-configuration-repository
+
